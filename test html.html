@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music pleer</title>
+    <link rel="stylesheet" type="text/css" href="test.css"/>
+</head>
+<style>
+    body{
+        text-align: center;
+        background-color: white;
+        color: black;
+        transition: background 0.5s, color 0.5s;
+    }
+    .dark-mod{
+        background-color: black;
+        color: white;
+    }
+    .button{
+        margin-top: 20px;
+        font-size: 18px;
+        padding: 10px 20px;
+        cursor: pointer;
+        border-radius: 5px;
+        border: none;
+        box-shadow: none;
+        background-color: gray;
+        color: white;
+    }
+    
+
+</style>
+<body>
+    <h1>Натисніть щоб змінити тему</h1>
+    <button onclick ="toggleBackground()">Змінити фон</button>
+    <script>
+        window.onload
+        gh=confirm("Привіт");
+        if(gh){
+            alert("Дозвіл отримано");
+        }else{
+            alert("Дозвіл заборонено");
+        }
+
+        function toggleBackground(){
+            document.body.classList.toggle("dark-mod");
+        }
+
+    </script>
+</body>
+</html>
